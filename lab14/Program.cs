@@ -64,7 +64,7 @@ namespace lab14
         }
         public override void Say()
         {
-            Console.WriteLine("Гав");
+            Console.WriteLine("Гав!");
         }
     }
     class Program
@@ -72,13 +72,15 @@ namespace lab14
 
         static void Main(string[] args)
         {
-            Cat cat = new Cat();
-            Dog dog = new Dog();
+            Cat cat = new Cat("Муська");
+            Dog dog = new Dog("Шарик");
+            cat.ShowInfo();
+            dog.ShowInfo();
             
 
             //создание стека
 
-            var stack = new Stack<string>();
+            /*var stack = new Stack<string>();
             stack.Push("cat");
             stack.Push("dog");
             
@@ -87,7 +89,7 @@ namespace lab14
             {
                 Console.WriteLine(stack.Pop());
 
-            }
+            }*/
             Console.ReadKey();
         }
     }
